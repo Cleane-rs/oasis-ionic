@@ -1,0 +1,205 @@
+/* Empty. Add your own CSS if you like */
+body, h1, h2, h3, h4, h5, h6, input, button, select, textarea {
+    font-family: montserrat !important;
+}
+
+.item.no-border {
+    border-style: none;
+}
+
+.val-icon-left {
+    float: left;
+    border-right: 1px solid #e4e3e3 !important;
+}
+
+.val-icon-right {
+    float: right;
+    border-left: 1px solid #e4e3e3 !important;
+}
+
+.val-icon {
+    top: -36px !important;
+    color: #e4e3e3;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 42px;
+    line-height: 41px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.loading {
+    top: 50% !important;
+    left: 50% !important;
+    padding: 25px !important;
+    border-radius: 7px !important;
+    /* background-color: black !important; */
+    color: white !important;
+    text-align: center !important;
+    text-overflow: ellipsis !important;
+    font-size: 22px !important;
+}
+
+.loading h1, .loading h2, .loading h3, .loading h4, .loading h5, .loading h6 {
+    color: #fff !important;
+}
+
+.input-label {
+    display: inline;
+}
+
+.val-icon-no-line {
+    height: 0;
+}
+
+.val-input {
+    /*padding-left: 8px !important;*/
+    /*padding-right: 8px !important;*/
+    /*border-radius: 4px !important;
+    border-left: 1px solid #e4e3e3 !important;
+    border-right: 1px solid #e4e3e3 !important;
+    border-top: 1px solid #e4e3e3 !important;*/
+    border-bottom: 1px solid #e4e3e3 !important;
+    width: 100%;
+    line-height: 40px;
+    height: 42px;
+    font-size: 22px;
+}
+
+.val-input-left-icon {
+    padding-right: 50px !important;
+}
+
+.val-input-right-icon {
+    padding-left: 50px !important;
+}
+
+.val-input-left-icon-no-line {
+    padding-right: 44px !important;
+}
+
+.val-input-right-icon-no-line {
+    padding-left: 44px !important;
+}
+
+.error-messages li {
+    color: maroon;
+    position: relative;
+    font-size: 13px;
+    text-align: left !important;
+    padding-left: 3px !important;
+}
+
+.error-messages.ng-active li i {
+    position: absolute;
+    left: -0px;
+}
+
+.val-error {
+    width: 100%;
+}
+
+.speech-bubble i.close {
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    font-size: 14px;
+    color: #978874;
+    cursor: pointer;
+    outline: none;
+}
+
+.speech-bubble {
+    background-color: #ffffff;
+    border: 1px solid #e9cbbb;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    /*width: 110px;*/
+    font-size: 14px;
+    color: maroon;
+    text-align: center;
+    padding: 9px;
+    padding-left: 5px;
+    position: relative;
+    margin-top: 11px;
+    margin-bottom: 1px;
+    /*box-shadow: 0 0 2px rgba(255, 0, 0, 0.35);
+     box-shadow: 0 0 2px tomato;*/
+}
+
+.speech-bubble .arrow {
+    border-style: solid;
+    position: absolute;
+}
+
+.speech-bubble .top {
+    border-color: transparent transparent #e9cbbb;
+    border-width: 0px 8px 8px 8px;
+    top: -8px;
+    left: 27px;
+}
+
+.speech-bubble .top:after {
+    border-color: transparent transparent #fafafa transparent;
+    border-style: solid;
+    border-width: 0px 7px 7px 7px;
+    top: 2px;
+    content: "";
+    position: absolute;
+    left: -7px;
+}
+
+@media (max-width: 768px) {
+    .error-messages.ng-active li {
+        font-size: 12px;
+    }
+}
+
+.item-complex .item-content, .item-radio .item-content {
+    padding: 16px 14px 16px 16px;
+}
+
+i.float-grey-right {
+    float: right;
+    color: #c0c0c0;
+}
+
+/*======================================================*/
+
+map {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.scroll {
+    height: 100%;
+}
+
+.angular-google-map-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.angular-google-map {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.marker-labels {
+    color: red;
+    background-color: white;
+    /*font-family: "Lucida Grande", "Arial", sans-serif;*/
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    white-space: nowrap;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+

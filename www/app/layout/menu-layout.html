@@ -1,0 +1,65 @@
+<ion-side-menus data-ng-controller="appCtrl as vm">
+
+    <ion-pane ion-side-menu-content>
+        <ion-nav-bar class="bar-dark">
+            <!--<ion-nav-back-button class="button-clear icon ion-ios7-arrow-back"></ion-nav-back-button>-->
+            <ion-nav-buttons side="left">
+                <button menu-toggle="left" class="button button-icon  ion-navicon" data-ng-show="!vm.backButtonIsShown"></button>
+                <ion-nav-back-button class="button-icon">
+
+                </ion-nav-back-button>
+            </ion-nav-buttons>
+
+            <ion-nav-buttons side="right" data-ng-if="vm.isUserSignedIn()">
+                <button menu-toggle="right" class="button button-icon icon icon-cog-1"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="mainContent" animation="slide-full"></ion-nav-view>
+        <!--<ion-nav-view name="mainContent" animation="slide-right-left"></ion-nav-view>-->
+    </ion-pane>
+
+    <ion-side-menu side="left">
+        <header class="bar bar-header bar-dark">
+            <h1 class="title">Team Cleaner</h1>
+        </header>
+        <ion-content class="has-header">
+            <ion-list>
+                <ion-item nav-clear menu-close ui-sref="app.dashboard">
+                    Home
+                    <i class="icon-home-outline float-grey-right"></i>
+                </ion-item>
+                <ion-item nav-clear menu-close data-ng-show="!vm.isUserSignedIn()" ui-sref="user.signin">
+                    Sign In
+                    <i class="icon-login float-grey-right"></i>
+                </ion-item>
+                <ion-item nav-clear menu-close data-ng-show="!vm.isUserSignedIn()" ui-sref="user.signup">
+                    Sign Up
+                    <i class="icon-edit-1 float-grey-right"></i>
+                </ion-item>
+            </ion-list>
+
+    </ion-side-menu>
+
+    <ion-side-menu side="right" data-ng-if="vm.isUserSignedIn()">
+        <header class="bar bar-header bar-dark">
+            <h1 class="title">User Account</h1>
+        </header>
+        <ion-content class="has-header">
+            <ion-list>
+                <ion-item nav-clear menu-close ui-sref="user.settings">
+                    Settings
+                    <i class="icon-cog-alt float-grey-right"></i>
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="user.preferences">
+                    Preferences
+                    <i class="icon-vcard float-grey-right"></i>
+                </ion-item>
+                <ion-item nav-clear menu-close data-ng-click="vm.signOut()">
+                    Sign Out
+                    <i class="icon-logout float-grey-right"></i>
+                </ion-item>
+
+            </ion-list>
+    </ion-side-menu>
+
+</ion-side-menus>

@@ -1,0 +1,65 @@
+<ion-view title="Preferences" data-ng-controller="preferencesCtrl as vm" data-ng-cloak hide-back-button="true">
+    <ion-content class="has-header has-footer">
+        <!--<form class="form-horizontal" novalidate name="$parent.signinform" ng-submit="vm.signIn()">-->
+            <!--<div class=" col-offset-10 col-80">-->
+                <!--<label class="item-input item-floating-label">-->
+                    <!--<span class="input-label">User name</span>-->
+                    <!--<input type="text" data-ng-model="vm.userName" class=" val-input val-input-left-icon"-->
+                           <!--name="userName" placeholder="User name" required/>-->
+                    <!--<i class="val-icon icon-mail val-icon-right val-icon-no-line"></i>-->
+
+                    <!--<div class="speech-bubble"-->
+                         <!--ng-if="(signinform.$submitted && signinform.userName.$invalid) || (signinform.userName.$touched && signinform.userName.$invalid)">-->
+                        <!--<div class="arrow top "></div>-->
+                        <!--<ul data-ng-show="signinform.userName.$error" class="error-messages val-error">-->
+                            <!--<li data-ng-show="signinform.userName.$error.required" class="has-error"><i-->
+                                    <!--class="icon-attention-3"></i> Username is required-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</label>-->
+            <!--</div>-->
+
+            <!--<div class=" col-offset-10 col-80">-->
+                <!--<label class="item-input item-floating-label">-->
+                    <!--<span class="input-label">Password</span>-->
+                    <!--<input type="password" data-ng-model="vm.password"-->
+                           <!--class=" val-input val-input-left-icon-no-line"-->
+                           <!--name="password" placeholder="Password" required/>-->
+                    <!--<i class="val-icon icon-lock-1 val-icon-right val-icon-no-line"></i>-->
+
+                    <!--<div class="speech-bubble"-->
+                         <!--ng-if="(signinform.$submitted && signinform.password.$invalid) || (signinform.password.$touched && signinform.password.$invalid)">-->
+                        <!--<div class="arrow top "></div>-->
+                        <!--<ul data-ng-show="signinform.password.$error" class="error-messages val-error">-->
+                            <!--<li data-ng-show="signinform.password.$error.required" class="has-error"><i-->
+                                    <!--class="icon-attention-3"></i> Password is required-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</label>-->
+            <!--</div>-->
+
+            <!--<br>-->
+
+            <!--<div class=" col-offset-10 col-80">-->
+                <!--<button class="button button-full button-positive">-->
+                    <!--Sign In-->
+                <!--</button>-->
+            <!--</div>-->
+        <!--</form>-->
+    </ion-content>
+
+    <div class="tabs-striped tabs-background-dark tabs-color-light">
+        <div class="tabs tabs-icon-top">
+            <a class="tab-item" href="#/user/settings">
+                <i class="icon icon-cog-alt"></i>
+                Settings
+            </a>
+            <a class="tab-item active" href="#/user/preferences">
+                <i class="icon icon-vcard"></i>
+                Preferences
+            </a>
+        </div>
+    </div>
+</ion-view>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/onsen-css-components-gray.css" rel="stylesheet">
+    <script type="text/javascript">
+      (function () {
+        var link_element = document.createElement("link"),
+                s = document.getElementsByTagName("script")[0];
+        if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+          link_element.href = "http:";
+        }
+        link_element.href += "//fonts.googleapis.com/css?family=Montserrat:400,700";
+        link_element.rel = "stylesheet";
+        link_element.type = "text/css";
+        s.parentNode.insertBefore(link_element, s);
+      })();
+    </script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!--<script src="lib/angular-messages/angular-messages.js"></script>-->
+    <script src="lib/lodash/dist/lodash.min.js"></script>
+    <script src="lib/angular-cache/dist/angular-cache.min.js"></script>
+
+    <script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src="lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="app/app.js"></script>
+    <script src="app/app-route.js"></script>
+    <script src="app/app-ctrl.js"></script>
+    <script src="app/app-settings.js"></script>
+    <script src="app/user/password-verify.js" ></script>
+    <script src="app/user/phone-validator.js" ></script>
+    <script src="js/controllers.js"></script>
+
+    <script src="app/user/signin-ctrl.js"></script>
+    <script src="app/user/signup-ctrl.js"></script>
+    <script src="app/user/settings.js"></script>
+    <script src="app/user/preferences.js"></script>
+    <script src="app/user/password-reminder.js"></script>
+    <script src="app/user/phone-validator.js"></script>
+
+
+    <script src="app/services/cleanerApi.js"></script>
+    <script src="app/services/userApi.js"></script>
+
+
+  </head>
+
+  <body ng-app="cleanerApp">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>
